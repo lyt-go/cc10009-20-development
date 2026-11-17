@@ -33,3 +33,26 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+.panel-head h3 { font-size: 14px; margin: 0; }
+.panel-hint { color: var(--muted); font-size: 12px; }
+.report-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: #334155; margin-bottom: 8px; }
+.conclusion { background: #f1f5f9; border-left: 3px solid var(--brand); padding: 8px 10px; font-size: 13px; margin: 0 0 10px; }
+.metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.metric-card { border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; }
+.boundary-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.boundary-notes { margin: 0 0 12px; padding-left: 18px; color: #475569; font-size: 12px; }
+.boundary-notes li { margin-bottom: 2px; }
+.tag { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 11px; border: 1px solid var(--border); }
+.tag.ok { background: #ecfdf3; border-color: #abefc6; color: #067647; }
+.tag.warn { background: #fffaeb; border-color: #fedf89; color: #b54708; }
+.tag.bad { background: #fef3f2; border-color: #fecdca; color: #b42318; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.split h4, .panel h4 { font-size: 13px; margin: 12px 0 6px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.inline-hint { color: var(--muted); font-size: 12px; }
+.row-active { background: #eef4ff; }
+.notice-text { color: #067647; }
+@media (max-width: 1100px) { .split { grid-template-columns: 1fr; } }
